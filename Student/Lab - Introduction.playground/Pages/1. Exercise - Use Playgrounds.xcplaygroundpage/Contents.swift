@@ -10,12 +10,17 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
-
+print("Egor Letov - Vse idet po planu")
 
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
-
+print("Границы ключ переломлен пополам")
+print("А наш батюшка Ленин совсем усоп")
+print("Он разложился на плесень и на липовый мёд")
+print("А перестройка всё идёт и идёт по плану")
+print("А вся грязь превратилась в голый лёд")
+print("и всё идёт по плану")
 
 
 /*:
