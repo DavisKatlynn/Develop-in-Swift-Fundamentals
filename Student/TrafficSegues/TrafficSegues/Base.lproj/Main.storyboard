@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cVv-z8-9J9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Red-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficSegues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqo-ZQ-ZoX">
+                                <rect key="frame" x="72" y="433" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push to Yellow"/>
+                                <connections>
+                                    <action selector="yellowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJa-jv-Ves"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kiy-Ho-PaC">
+                                <rect key="frame" x="247" y="433" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push to Green"/>
+                                <connections>
+                                    <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WFc-n9-aJl"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9t-7j-BAZ">
+                                <rect key="frame" x="184" y="489" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Red" id="Ocx-iC-Bi7">
+                        <barButtonItem key="backBarButtonItem" title="Go To Red" id="Kri-P7-VvV"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segueSwitch" destination="y9t-7j-BAZ" id="u5I-PW-bOC"/>
+                        <segue destination="Ast-X4-oHT" kind="show" identifier="Yellow" id="m1k-uB-60P"/>
+                        <segue destination="1WN-ld-RqF" kind="show" identifier="Green" id="nQX-0Y-on2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="93.75"/>
+        </scene>
+        <!--Yellow-->
+        <scene sceneID="yl4-3p-Y45">
+            <objects>
+                <viewController id="Ast-X4-oHT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="31z-AP-2fP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Cb3-hJ-J3A"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yellow" largeTitleDisplayMode="never" id="DXK-6E-qcl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tek-Gn-yYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="-300"/>
+        </scene>
+        <!--Green-->
+        <scene sceneID="pz5-Zp-ABj">
+            <objects>
+                <viewController id="1WN-ld-RqF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mWF-ey-CuK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vsS-eV-zdG"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Green" largeTitleDisplayMode="never" id="7Ki-HN-TxI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XcW-fU-tuP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1806" y="415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oil-bi-TVK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cVv-z8-9J9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="pox-Kz-RJY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="t1H-lD-KXX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOf-nn-rYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
